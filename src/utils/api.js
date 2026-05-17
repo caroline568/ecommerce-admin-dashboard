@@ -1,34 +1,41 @@
-const BASE_URL = "http://localhost:5000/products";
+const BASE_URL =
+  "https://ecommerce-admin-dashboard-i1i7.onrender.com/products";
 
-// READ
+// GET PRODUCTS
 export const fetchProducts = async () => {
-  const res = await fetch(BASE_URL);
-  return res.json();
+  const response = await fetch(BASE_URL);
+  return response.json();
 };
 
-// CREATE
+// CREATE PRODUCT
 export const createProduct = async (product) => {
-  const res = await fetch(BASE_URL, {
+  const response = await fetch(BASE_URL, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+    },
     body: JSON.stringify(product),
   });
-  return res.json();
+
+  return response.json();
 };
 
-// UPDATE
-export const updateProduct = async (id, data) => {
-  const res = await fetch(`${BASE_URL}/${id}`, {
-    method: "PATCH",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data),
-  });
-  return res.json();
-};
-
-// DELETE
+// DELETE PRODUCT
 export const deleteProduct = async (id) => {
   await fetch(`${BASE_URL}/${id}`, {
     method: "DELETE",
   });
+};
+
+// UPDATE PRODUCT
+export const updateProduct = async (id, updatedProduct) => {
+  const response = await fetch(`${BASE_URL}/${id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(updatedProduct),
+  });
+
+  return response.json();
 };
