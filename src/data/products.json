@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Air Max",
+    "price": 120,
+    "category": "Shoes",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "description": "Comfortable running shoes"
+  },
+  {
+    "id": 2,
+    "name": "MacBook Pro",
+    "price": 1500,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1517336714739-489689fd1ca8",
+    "description": "Powerful laptop for developers"
+  },
+  {
+    "id": 3,
+    "name": "Gaming Chair",
+    "price": 300,
+    "category": "Furniture",
+    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7",
+    "description": "Comfortable ergonomic chair"
+  },
+  {
+    "id": 4,
+    "name": "Wireless Headphones",
+    "price": 180,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1511376777868-611b54f68947",
+    "description": "Noise-cancelling over-ear headphones"
+  },
+  {
+    "id": 5,
+    "name": "Smartwatch",
+    "price": 220,
+    "category": "Wearables",
+    "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b",
+    "description": "Track fitness and notifications on the go"
+  }
+]
